@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C23A8B4E18DA43B1004281ED /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23A8B4D18DA43B1004281ED /* AVFoundation.framework */; };
+		C23A8B5018DA43BA004281ED /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23A8B4F18DA43BA004281ED /* CoreMedia.framework */; };
 		D2C736DB18D1F0C000E68FAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C736DA18D1F0C000E68FAF /* Foundation.framework */; };
 		D2C736DD18D1F0C000E68FAF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C736DC18D1F0C000E68FAF /* CoreGraphics.framework */; };
 		D2C736DF18D1F0C000E68FAF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C736DE18D1F0C000E68FAF /* UIKit.framework */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C23A8B4D18DA43B1004281ED /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C23A8B4F18DA43BA004281ED /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		D2C736D718D1F0C000E68FAF /* EasyZbarSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyZbarSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C736DA18D1F0C000E68FAF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2C736DC18D1F0C000E68FAF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -104,6 +108,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C23A8B5018DA43BA004281ED /* CoreMedia.framework in Frameworks */,
+				C23A8B4E18DA43B1004281ED /* AVFoundation.framework in Frameworks */,
 				D2C7374418D1F62D00E68FAF /* libiconv.dylib in Frameworks */,
 				D2C7374218D1F61C00E68FAF /* QuartzCore.framework in Frameworks */,
 				D2C736DD18D1F0C000E68FAF /* CoreGraphics.framework in Frameworks */,
@@ -148,6 +154,8 @@
 		D2C736D918D1F0C000E68FAF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C23A8B4F18DA43BA004281ED /* CoreMedia.framework */,
+				C23A8B4D18DA43B1004281ED /* AVFoundation.framework */,
 				D2C7374318D1F62D00E68FAF /* libiconv.dylib */,
 				D2C7374118D1F61C00E68FAF /* QuartzCore.framework */,
 				D2C736DA18D1F0C000E68FAF /* Foundation.framework */,
@@ -461,9 +469,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -493,9 +502,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -507,12 +517,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EasyZbarSDK/EasyZbarSDK-Prefix.pch";
 				INFOPLIST_FILE = "EasyZbarSDK/EasyZbarSDK-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/EasyZbarSDK/ZBarSDK/Headers",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -525,12 +536,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EasyZbarSDK/EasyZbarSDK-Prefix.pch";
 				INFOPLIST_FILE = "EasyZbarSDK/EasyZbarSDK-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/EasyZbarSDK/ZBarSDK/Headers",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -594,6 +606,7 @@
 				D2C7370B18D1F0C000E68FAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2C7370C18D1F0C000E68FAF /* Build configuration list for PBXNativeTarget "EasyZbarSDKTests" */ = {
 			isa = XCConfigurationList;
@@ -602,6 +615,7 @@
 				D2C7370E18D1F0C000E68FAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
